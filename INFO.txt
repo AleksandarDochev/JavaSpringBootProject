@@ -1,3 +1,5 @@
 spring-boot-devtools Configuration
-Preferences>Build,Execution,Deployment > Compiler
+Settings>Build,Execution,Deployment > Compiler
  Check Box: Build project automatically
+Settings >Advanced Settings
+ Check Box: Allow auto-make to...
