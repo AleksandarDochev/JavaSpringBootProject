@@ -1,0 +1,3 @@
+spring-boot-devtools Configuration
+Preferences>Build,Execution,Deployment > Compiler
+ Check Box: Build project automatically
