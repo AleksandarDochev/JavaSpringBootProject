@@ -11,7 +11,11 @@ public class FunRestController {
     @GetMapping("/")
     public String sayHello(){
         return "Hello world!";
-
+    }
+    //exposing new endpoint for "workout"
+    @GetMapping("/workout")
+    public String getDailyWorkout(){
+        return "Run a hard 5k";
     }
     //Example of injection
     @Value("${coach.name}")
