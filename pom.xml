@@ -18,25 +18,26 @@
 	</properties>
 
 	<dependencies>
-		<!--Spring Support-->
+		<!--
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>6.1.1</version>
 		</dependency>
-		<!--Hibernate Support-->
+		<!Hibernate Support>
 		<dependency>
 			<groupId>org.hibernate.validator</groupId>
 			<artifactId>hibernate-validator</artifactId>
 			<version>8.0.1.Final</version>
 		</dependency>
-		<!--Web template:  Thymeleaf-->
+		<!Web template:  Thymeleaf>
 		<dependency>
 			<groupId>org.thymeleaf</groupId>
 			<artifactId>thymeleaf</artifactId>
 			<version>3.1.2.RELEASE</version>
 		</dependency>
-
+		-->
+		<!--All of the above is part of the spring-boot-starter-web<-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
