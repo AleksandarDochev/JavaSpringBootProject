@@ -17,6 +17,10 @@ public class FunRestController {
     public String getDailyWorkout(){
         return "Run a hard 5k";
     }
+    @GetMapping("/fortune")
+    public String getDailyFortune(){
+        return "Today is your lucky day.";
+    }
     //Example of injection
     @Value("${coach.name}")
     public String coachMame;
