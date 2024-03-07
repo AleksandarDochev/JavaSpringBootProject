@@ -78,6 +78,13 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!--Adding support for Spring boot actuator-->
+		<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-actuator</artifactId>
+		<scope>test</scope>
+	</dependency>
+
 
 	</dependencies>
 
