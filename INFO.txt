@@ -6,3 +6,6 @@ Settings >Advanced Settings
 
  Running project out of intellij
  we need to disable security
+
+ how to Properly install java and configure local machine for Java development
+ https://www.youtube.com/watch?v=UxmzxT4YglQ&ab_channel=luv2code
