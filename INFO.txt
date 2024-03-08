@@ -3,3 +3,6 @@ Settings>Build,Execution,Deployment > Compiler
  Check Box: Build project automatically
 Settings >Advanced Settings
  Check Box: Allow auto-make to...
+
+ Running project out of intellij
+ we need to disable security
