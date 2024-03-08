@@ -10,9 +10,17 @@ Settings >Advanced Settings
  how to Properly install java and configure local machine for Java development
  https://www.youtube.com/watch?v=UxmzxT4YglQ&ab_channel=luv2code
 
- TO run from CMD
-we go to the correct drive in our case it's F not C
+#TO run from CMD
+#we go to the correct drive in our case it's F not C
 cd /
 cd /d f:
 cd F:\Spring boot course\-spring-boot-MAIN
-mvnw packadge
+mvnw package
+#then its going to go to our target folder , it's going to say in the prompt
+#in folder F:\Spring boot course\-spring-boot-MAIN>
+java -jar target\mycoolapp-0.0.2.jar
+
+
+#TO run from CMD without packaging
+#in folder F:\Spring boot course\-spring-boot-MAIN>
+mvnw spring-boot:run
