@@ -24,3 +24,10 @@ java -jar target\mycoolapp-0.0.2.jar
 #TO run from CMD without packaging
 #in folder F:\Spring boot course\-spring-boot-MAIN>
 mvnw spring-boot:run
+
+
+#List of spring boot properties
+https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html#appendix.application-properties
+
+#Spring boot logging handling
+https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.logging
