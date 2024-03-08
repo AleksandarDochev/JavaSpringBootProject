@@ -13,7 +13,7 @@ public class MycoolappApplication {
 		SpringApplication.run(MycoolappApplication.class, args);
 
 		FunRestController funRestController = new FunRestController();
-		System.out.println(funRestController.coachMame + funRestController.teamName);
+		//System.out.println("\n"+funRestController.coachMame + funRestController.teamName);
 
 
 	}

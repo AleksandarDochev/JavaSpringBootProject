@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class FunRestController {
 
+    //Expose "/" that returns "Hello world!"
     @GetMapping("/")
     public String sayHello(){
         return "Hello world!";
@@ -21,11 +22,14 @@ public class FunRestController {
     public String getDailyFortune(){
         return "Today is your lucky day.";
     }
-    //Example of injection
+    //Example of injection of 2 properties
     @Value("${coach.name}")
     public String coachMame;
-    //Example of injection
     @Value("${team.name}")
     public String teamName;
-
+    //Expose new endpoints for "teaminfo" and give them a return value
+    @GetMapping("/teaminfo")
+    public String getTeamNameInfo(){
+        return "Coach: " + coachMame +", Team name: " +teamName;
+    }
 }
