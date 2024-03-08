@@ -9,3 +9,10 @@ Settings >Advanced Settings
 
  how to Properly install java and configure local machine for Java development
  https://www.youtube.com/watch?v=UxmzxT4YglQ&ab_channel=luv2code
+
+ TO run from CMD
+we go to the correct drive in our case it's F not C
+cd /
+cd /d f:
+cd F:\Spring boot course\-spring-boot-MAIN
+mvnw packadge
