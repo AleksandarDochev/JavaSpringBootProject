@@ -13,10 +13,16 @@ public class SpringCoreController {
     //define private field for the dependency
     private Coach myCoach;
     //Define constructor for dependency injection
+//    @Autowired
+//    public SpringCoreController(Coach theCoach){
+//        myCoach=theCoach;
+//    }
+    //Define setter for dependency injection
     @Autowired
-    public SpringCoreController(Coach theCoach){
+    public void setCoach(Coach theCoach){
         myCoach=theCoach;
     }
+
     @GetMapping("/dailyworkout")
     public String getDailyWorkout(){
         return myCoach.getDailyWorkout();
