@@ -20,7 +20,7 @@ public class SpringCoreController {
     //but @Qualifier is going to overwrite the @Primary
     @Autowired
     public SpringCoreController(
-            @Qualifier("cricketCoach") Coach theCoach)
+            @Qualifier("swimCoach") Coach theCoach)
             //@Qualifier("cricketCoach") Coach theAnotherCoach)
     {
         System.out.println("In constructor: " +getClass().getSimpleName());
