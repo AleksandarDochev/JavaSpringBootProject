@@ -18,7 +18,8 @@ public class SpringCoreController {
     //@Qualifier is not needed if a have a bean with a @Primary .
     //but @Qualifier is going to overwrite the @Primary
     @Autowired
-    public SpringCoreController( Coach theCoach){
+    public SpringCoreController(@Qualifier("cricketCoach") Coach theCoach){
+        System.out.println("In constructor: " +getClass().getSimpleName());
         myCoach=theCoach;
     }
     //Define setter for dependency injection
