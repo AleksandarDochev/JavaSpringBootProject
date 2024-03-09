@@ -11,7 +11,7 @@ public class SpringBootApplication {
 
 		SpringApplication.run(SpringBootApplication.class, args);
 
-		FunRestController funRestController = new FunRestController();
+		//FunRestController funRestController = new FunRestController();
 		//System.out.println("\n"+funRestController.coachMame + funRestController.teamName);
 
 
