@@ -1,4 +1,4 @@
-package com.SpringApp.springboot.demo.mycoolapp.rest;
+package com.SpringApp.springboot.demo.SpringBootProject.rest;
 
 
 import org.springframework.beans.factory.annotation.Value;
