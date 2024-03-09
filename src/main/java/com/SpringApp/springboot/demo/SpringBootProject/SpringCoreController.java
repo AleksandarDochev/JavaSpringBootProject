@@ -1,4 +1,4 @@
-package com.SpringApp.springboot.demo.SpringBootProject.rest;
+package com.SpringApp.springboot.demo.SpringBootProject;
 
 import com.SpringApp.springboot.demo.SpringBootProject.Coach;
 
