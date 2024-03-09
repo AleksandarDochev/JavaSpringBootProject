@@ -15,8 +15,10 @@ public class SpringCoreController {
     private Coach myCoach;
     //Define constructor for dependency injection
     //and the @Qualifier is given starting with a small letter ,
+    //@Qualifier is not needed if a have a bean with a @Primary .
+    //but @Qualifier is going to overwrite the @Primary
     @Autowired
-    public SpringCoreController(@Qualifier("trackCoach") Coach theCoach){
+    public SpringCoreController( Coach theCoach){
         myCoach=theCoach;
     }
     //Define setter for dependency injection
