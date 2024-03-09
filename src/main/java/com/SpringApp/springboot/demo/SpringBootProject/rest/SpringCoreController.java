@@ -20,7 +20,8 @@ public class SpringCoreController {
     //but @Qualifier is going to overwrite the @Primary
     @Autowired
     public SpringCoreController(
-            @Qualifier("swimCoach") Coach theCoach)
+            //we can inject the custom bean id aquatic for swimCoach
+            @Qualifier("aquatic") Coach theCoach)
             //@Qualifier("cricketCoach") Coach theAnotherCoach)
     {
         System.out.println("In constructor: " +getClass().getSimpleName());
