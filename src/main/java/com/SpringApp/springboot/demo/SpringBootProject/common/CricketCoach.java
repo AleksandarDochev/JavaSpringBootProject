@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 //this how to set a scope to a bean
-@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+//@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class CricketCoach implements Coach{
 
     public CricketCoach(){
