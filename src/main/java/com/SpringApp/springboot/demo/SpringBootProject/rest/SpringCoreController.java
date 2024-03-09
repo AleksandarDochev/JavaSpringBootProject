@@ -1,6 +1,6 @@
-package com.SpringApp.springboot.demo.SpringBootProject;
+package com.SpringApp.springboot.demo.SpringBootProject.rest;
 
-import com.SpringApp.springboot.demo.SpringBootProject.Coach;
+import com.SpringApp.springboot.demo.SpringBootProject.common.Coach;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
