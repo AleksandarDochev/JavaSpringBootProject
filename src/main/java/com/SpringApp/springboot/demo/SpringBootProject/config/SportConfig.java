@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 public class SportConfig {
 
     //we can give it a custom bean ID ("aquatic") , default is swimCoach
-    @Bean("aquatic")
+    @Bean("aquatic") //we define a bean method to configure the bean
     //whene we call the bean id it;s the methods name starting with a small letter
     public Coach swimCoach(){
         return new SwimCoach();
