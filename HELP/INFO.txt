@@ -31,3 +31,10 @@ https://docs.spring.io/spring-boot/docs/current/reference/html/application-prope
 
 #Spring boot logging handling
 https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.logging
+
+#MySQL DB environment setup
+install DB server https://dev.mysql.com/downloads/mysql/
+install DB GUI for server https://dev.mysql.com/downloads/workbench/
+
+#We login into our Database and we run the first script 01-create-user.sql
+#we close the connection and we create a new connection to springstudent pass:springstudent
