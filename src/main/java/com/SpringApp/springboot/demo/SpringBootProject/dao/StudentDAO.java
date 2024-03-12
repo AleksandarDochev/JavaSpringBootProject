@@ -5,4 +5,5 @@ import com.SpringApp.springboot.demo.SpringBootProject.entity.Student;
 
 public interface StudentDAO {
     void save (Student theStudent);
+    Student findByID(Integer id);
 }

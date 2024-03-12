@@ -40,8 +40,32 @@ public class SpringBootApplicationCrudAPP {
 		//with the -> here we skip the otherwise needed implementation  up bove
 		return runner ->{
 			//createStudent(studentDAO);
-			createMultipleStudents(studentDAO);
+			//createMultipleStudents(studentDAO);
+			readStudent(studentDAO);
 		};
+	}
+
+	private void readStudent(StudentDAO studentDAO) {
+		//create a student object
+		System.out.println("Creating new students object....");
+		Student tempStudent = new Student("Daffy","Duck","bbablblabbla@abv.bg");
+		//save the student
+		System.out.println("Saving the students ...");
+		studentDAO.save(tempStudent);
+
+		//display id of the save student
+		int theid = tempStudent.getId();
+		System.out.println("Saved student. Generated id: " + theid);
+
+		//retrieve student based on id : primary key
+		System.out.println("Retreaving student with id: " + theid);
+		Student myStudent =studentDAO.findByID(theid);
+
+		//display student
+		System.out.println("Found the student: "+myStudent);
+
+
+
 	}
 
 	private void createMultipleStudents(StudentDAO studentDAO) {
