@@ -3,10 +3,13 @@ package com.SpringApp.springboot.demo.SpringBootProject.rest;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
-public class FunRestController {
+@org.springframework.web.bind.annotation.RestController
+public class TestRestController {
+
+    public TestRestController() {
+        System.out.println("In constructor: " +getClass().getSimpleName());
+    }
 
     //Expose "/" that returns "Hello world!"
     @GetMapping("/")

@@ -1,7 +1,7 @@
 package com.SpringApp.springboot.demo.SpringBootProject;
 
 
-//import com.SpringApp.springboot.demo.SpringBootProject.rest.FunRestController;
+//import com.SpringApp.springboot.demo.SpringBootProject.rest.TestRestController;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.context.annotation.Bean;
@@ -22,25 +22,9 @@ public class SpringBootApplication {
 		//Standard line for running our app
 		SpringApplication.run(SpringBootApplication.class, args);
 		//test code for RestControllers
-		//FunRestController funRestController = new FunRestController();
+		//TestRestController funRestController = new TestRestController();
 		//System.out.println("\n"+funRestController.coachMame + funRestController.teamName);
 	}
 
-	@Bean //we define a commandline runner for command line application
-	//this CommandLineRunner comes from the Spring Boot Framework
-	//and this snipped of code is executed after the Spring Beans have been loaded
-	public CommandLineRunner commandLineRunner(String[] args){
-
-//		CommandLineRunner runner = new CommandLineRunner() {
-//			@Override
-//			public void run(String... args) throws Exception {
-//				System.out.println("Hello World!");
-//			}
-//		};
-		//with the -> here we skip the otherwise needed implementation  up bove
-		return runner ->{
-			System.out.println("Hello World! runner");
-		};
-	}
 
 }
