@@ -2,6 +2,8 @@ package com.SpringApp.springboot.demo.SpringBootProject;
 
 
 //import com.SpringApp.springboot.demo.SpringBootProject.rest.TestRestController;
+import com.SpringApp.springboot.demo.SpringBootProject.dao.StudentDAO;
+import com.SpringApp.springboot.demo.SpringBootProject.entity.Student;
 import com.SpringApp.springboot.demo.SpringBootProject.rest.SpringCoreController;
 import com.SpringApp.springboot.demo.SpringBootProject.rest.TestRestController;
 import org.springframework.boot.CommandLineRunner;
@@ -22,15 +24,12 @@ import org.springframework.context.annotation.FilterType;
 @org.springframework.boot.autoconfigure.SpringBootApplication
 public class SpringBootApplicationCrudAPP {
 
-	public static void main(String[] args) {
-		//Standard line for running our app
-		SpringApplication.run(SpringBootApplicationCrudAPP.class, args);
-	}
+	public static void main(String[] args) {SpringApplication.run(SpringBootApplicationCrudAPP.class, args);}
 
 	@Bean //we define a commandline runner for command line application
 	//this CommandLineRunner comes from the Spring Boot Framework
 	//and this snipped of code is executed after the Spring Beans have been loaded
-	public CommandLineRunner commandLineRunner(String[] args){
+	public CommandLineRunner commandLineRunner(StudentDAO studentDAO){
 
 //		CommandLineRunner runner = new CommandLineRunner() {
 //			@Override
@@ -40,8 +39,37 @@ public class SpringBootApplicationCrudAPP {
 //		};
 		//with the -> here we skip the otherwise needed implementation  up bove
 		return runner ->{
-			System.out.println("Hello World! runner");
+			//createStudent(studentDAO);
+			createMultipleStudents(studentDAO);
 		};
+	}
+
+	private void createMultipleStudents(StudentDAO studentDAO) {
+		//create the students object
+		System.out.println("Creating new students object....");
+		Student tempStudent = new Student("Paul","Doe","bbablblabbla@abv.bg");
+		Student tempStudent2 = new Student("boul","dsd","awda@abv.bg");
+		Student tempStudent3 = new Student("smalu","Ddasad","bawawef@abv.bg");
+		//save the student
+		System.out.println("Saving the students ...");
+		studentDAO.save(tempStudent);
+		studentDAO.save(tempStudent2);
+		studentDAO.save(tempStudent3);
+		//display id of saved student
+		System.out.println("Saved student. Generated id: " + tempStudent.getId());
+		System.out.println("Saved student. Generated id: " + tempStudent2.getId());
+		System.out.println("Saved student. Generated id: " + tempStudent3.getId());
+	}
+
+	private void createStudent(StudentDAO studentDAO) {
+		//create the student object
+		System.out.println("Creating new student object....");
+		Student tempStudent = new Student("Paul","Doe","bbablblabbla@abv.bg");
+		//save the student
+		System.out.println("Saving the student ...");
+		studentDAO.save(tempStudent);
+		//display id of saved student
+		System.out.println("Saved student. Generated id: " + tempStudent.getId());
 	}
 
 }
