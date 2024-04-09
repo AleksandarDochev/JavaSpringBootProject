@@ -2,9 +2,12 @@ package com.SpringApp.springboot.demo.SpringBootProject.dao;
 
 import com.SpringApp.springboot.demo.SpringBootProject.entity.Student;
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.TypedQuery;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 //Specialized annotation for repositories
 //supports component scanning
@@ -36,6 +39,16 @@ public class StudentDAOImpl implements StudentDAO{
     @Override
     public Student findByID(Integer id) {
         return entityManager.find(Student.class,id);
+    }
+
+    @Override
+    public List<Student> findAll() {
+        //create query                                             //name of JPA entity
+                                                                         //not name of the database table
+                                                                       //all JPQL syntax based on entity name and fields
+        TypedQuery<Student> theQuery = entityManager.createQuery("FROM Student",Student.class);
+        //return query results
+        return theQuery.getResultList();
     }
 
 
