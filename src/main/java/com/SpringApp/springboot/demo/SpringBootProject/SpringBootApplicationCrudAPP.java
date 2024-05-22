@@ -56,7 +56,7 @@ public class SpringBootApplicationCrudAPP {
 	}
 	private void queryForAllStudentSorted(StudentDAO studentDAO) {
 		//get a list of students
-		List<Student> theStudents = studentDAO.findBYLastName();
+		List<Student> theStudents = studentDAO.queryByLastName();
 		//display list of students
 		System.out.println("Printing all students sorted by lastname: ");
 		for (Student tempStudent : theStudents){
