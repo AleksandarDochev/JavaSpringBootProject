@@ -12,6 +12,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.FilterType;
 
+import java.util.List;
+
 //we are adding whitch folders(packadges) should our spring boot app scan
 //we are doing this so we can scann components out side of our base directory
 //we also have to mention our base dir in the configuration , we moved our Coach and CricketCoach
@@ -41,8 +43,19 @@ public class SpringBootApplicationCrudAPP {
 		return runner ->{
 			//createStudent(studentDAO);
 			//createMultipleStudents(studentDAO);
-			readStudent(studentDAO);
+			//readStudent(studentDAO);
+			queryForStudent(studentDAO);
 		};
+	}
+
+	private void queryForStudent(StudentDAO studentDAO) {
+		//get a list of students
+		List<Student> theStudents = studentDAO.findAll();
+        //display list of students
+		System.out.println("Printing students: ");
+        for (Student tempStudent : theStudents){
+			System.out.println(tempStudent);
+		}
 	}
 
 	private void readStudent(StudentDAO studentDAO) {
