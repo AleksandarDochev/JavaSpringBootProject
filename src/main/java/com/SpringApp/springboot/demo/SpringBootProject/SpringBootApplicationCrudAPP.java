@@ -4,13 +4,9 @@ package com.SpringApp.springboot.demo.SpringBootProject;
 //import com.SpringApp.springboot.demo.SpringBootProject.rest.TestRestController;
 import com.SpringApp.springboot.demo.SpringBootProject.dao.StudentDAO;
 import com.SpringApp.springboot.demo.SpringBootProject.entity.Student;
-import com.SpringApp.springboot.demo.SpringBootProject.rest.SpringCoreController;
-import com.SpringApp.springboot.demo.SpringBootProject.rest.TestRestController;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.FilterType;
 
 import java.util.List;
 
@@ -44,16 +40,26 @@ public class SpringBootApplicationCrudAPP {
 			//createStudent(studentDAO);
 			//createMultipleStudents(studentDAO);
 			//readStudent(studentDAO);
-			queryForStudent(studentDAO);
+			queryForAllStudent(studentDAO);
+			queryForAllStudentSorted(studentDAO);
 		};
 	}
 
-	private void queryForStudent(StudentDAO studentDAO) {
+	private void queryForAllStudent(StudentDAO studentDAO) {
 		//get a list of students
 		List<Student> theStudents = studentDAO.findAll();
         //display list of students
-		System.out.println("Printing students: ");
+		System.out.println("Printing all students: ");
         for (Student tempStudent : theStudents){
+			System.out.println(tempStudent);
+		}
+	}
+	private void queryForAllStudentSorted(StudentDAO studentDAO) {
+		//get a list of students
+		List<Student> theStudents = studentDAO.findBYLastName();
+		//display list of students
+		System.out.println("Printing all students sorted by lastname: ");
+		for (Student tempStudent : theStudents){
 			System.out.println(tempStudent);
 		}
 	}
