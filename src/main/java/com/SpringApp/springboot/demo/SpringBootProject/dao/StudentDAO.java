@@ -12,4 +12,5 @@ public interface StudentDAO {
     List<Student> findAll();
 
     List<Student> queryByLastName();
+    List<Student> findOnlyByLastName(String theLastName);
 }

@@ -42,7 +42,18 @@ public class SpringBootApplicationCrudAPP {
 			//readStudent(studentDAO);
 			queryForAllStudent(studentDAO);
 			queryForAllStudentSorted(studentDAO);
+			queryForStudentsByLastName(studentDAO);
 		};
+	}
+
+	private void queryForStudentsByLastName(StudentDAO studentDAO) {
+		//get a list of students
+        List<Student> theStudents = studentDAO.findOnlyByLastName("Doe");
+        //display list of students
+        System.out.println("Printing all students by last name Doe: ");
+        for (Student tempStudent : theStudents){
+            System.out.println(tempStudent);
+        }
 	}
 
 	private void queryForAllStudent(StudentDAO studentDAO) {
