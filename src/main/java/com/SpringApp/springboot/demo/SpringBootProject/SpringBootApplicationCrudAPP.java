@@ -43,7 +43,25 @@ public class SpringBootApplicationCrudAPP {
 			queryForAllStudent(studentDAO);
 			queryForAllStudentSorted(studentDAO);
 			queryForStudentsByLastName(studentDAO);
+			updateStudent(studentDAO);
 		};
+	}
+
+	private void updateStudent(StudentDAO studentDAO) {
+		//relive the student based  on the ID the primary key
+		int StudentId = 1;
+		System.out.println("Getting student with ID " + StudentId);
+        Student myStudent = studentDAO.findByID(StudentId);
+		//change first name to "John"
+		System.out.println("Updating student...");
+		myStudent.setFirstName("John");
+        //update the student
+		studentDAO.updateStudentMethod(myStudent);
+		//display and update student
+		System.out.println("Updating targeted Student :"+ myStudent);
+		//check updated student status
+		// TODO  create a first name query for student checks
+//		System.out.println("Updated student: " + studentDAO.queryByLastName());
 	}
 
 	private void queryForStudentsByLastName(StudentDAO studentDAO) {

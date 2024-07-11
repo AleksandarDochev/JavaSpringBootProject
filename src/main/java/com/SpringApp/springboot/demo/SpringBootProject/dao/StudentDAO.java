@@ -13,4 +13,5 @@ public interface StudentDAO {
 
     List<Student> queryByLastName();
     List<Student> findOnlyByLastName(String theLastName);
+    void updateStudentMethod (Student theStudent);
 }
