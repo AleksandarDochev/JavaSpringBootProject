@@ -38,14 +38,14 @@ public class SpringBootApplicationCrudAPP {
 		//with the -> here we skip the otherwise needed implementation  up bove
 		return runner ->{
 			//createStudent(studentDAO);
-			//createMultipleStudents(studentDAO);
+			createMultipleStudents(studentDAO);
 			//readStudent(studentDAO);
 			//queryForAllStudent(studentDAO);
 			//queryForAllStudentSorted(studentDAO);
 			//queryForStudentsByLastName(studentDAO);
 			//updateStudent(studentDAO);
 			//deleteStudent(studentDAO);
-			deleteAllStudentsApp(studentDAO);
+			//deleteAllStudentsApp(studentDAO);
 		};
 	}
 
