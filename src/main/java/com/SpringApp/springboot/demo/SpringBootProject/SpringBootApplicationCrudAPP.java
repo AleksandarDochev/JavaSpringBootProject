@@ -40,11 +40,20 @@ public class SpringBootApplicationCrudAPP {
 			//createStudent(studentDAO);
 			//createMultipleStudents(studentDAO);
 			//readStudent(studentDAO);
-			queryForAllStudent(studentDAO);
-			queryForAllStudentSorted(studentDAO);
-			queryForStudentsByLastName(studentDAO);
-			updateStudent(studentDAO);
+			//queryForAllStudent(studentDAO);
+			//queryForAllStudentSorted(studentDAO);
+			//queryForStudentsByLastName(studentDAO);
+			//updateStudent(studentDAO);
+			deleteStudent(studentDAO);
 		};
+	}
+
+	private void deleteStudent(StudentDAO studentDAOinApp) {
+		//relive the student based  on the ID the primary key
+        int StudentId = 1;
+        System.out.println("Deleting student with ID " + StudentId);
+        studentDAOinApp.deleteByIdStudentMethod(StudentId);
+        System.out.println("Student deleted with ID " + StudentId);
 	}
 
 	private void updateStudent(StudentDAO studentDAO) {
