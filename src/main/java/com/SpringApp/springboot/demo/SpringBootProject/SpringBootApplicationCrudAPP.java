@@ -44,8 +44,15 @@ public class SpringBootApplicationCrudAPP {
 			//queryForAllStudentSorted(studentDAO);
 			//queryForStudentsByLastName(studentDAO);
 			//updateStudent(studentDAO);
-			deleteStudent(studentDAO);
+			//deleteStudent(studentDAO);
+			deleteAllStudentsApp(studentDAO);
 		};
+	}
+
+	private void deleteAllStudentsApp(StudentDAO studentDAO) {
+		System.out.println("Deleting all Students");
+		int numbRowsDeleted = studentDAO.deleteAllStudentsMethod();
+		System.out.println("Deleted rows: " + numbRowsDeleted);
 	}
 
 	private void deleteStudent(StudentDAO studentDAOinApp) {
