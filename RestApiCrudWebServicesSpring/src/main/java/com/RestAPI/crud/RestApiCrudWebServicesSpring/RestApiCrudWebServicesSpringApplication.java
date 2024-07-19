@@ -9,5 +9,5 @@ public class RestApiCrudWebServicesSpringApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(RestApiCrudWebServicesSpringApplication.class, args);
 	}
-
+	//access http://localhost:7070/test/hello
 }
