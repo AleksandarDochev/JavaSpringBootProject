@@ -2,11 +2,11 @@ package com.TheDevCoffeePoint.RESTapiWebServicesJsonHTTPmessagingPostaman.rest;
 
 import com.TheDevCoffeePoint.RESTapiWebServicesJsonHTTPmessagingPostaman.entity.Student;
 import jakarta.annotation.PostConstruct;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
+import javax.naming.PartialResultException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -36,10 +36,36 @@ public class StudentRestController {
     @GetMapping("/students/{studentId}")//this is a path variable
 
     public Student getStudent(@PathVariable int studentId){
+        //Error handling , check student array size against the given value
+        if (studentId >= theStudents.size() || studentId<0){
+            throw new StudentNotFoundException("Student id not found - " + studentId);
+        }
         //access for Students REST service API http://localhost:7070/api/students/{studentId}
         //just index into the list ... keep it simple now
         //test for Students REST service API http://localhost:7070/api/students/1
         return theStudents.get(studentId);
     }
 
+    //add an exception handler using @ExceptionHandler
+
+    //exception handler method
+    @ExceptionHandler
+    //we choose a response body type\/           //exception type to handle/catch  \/
+    public ResponseEntity<StudentErrorResponse> handleException(StudentNotFoundException exc) {
+        //create a StudentErrorResponse
+        //we use the prevously created StudentErrorResponse to give a value to HttpStatus responder
+        StudentErrorResponse error = new StudentErrorResponse();
+        error.setStatus(HttpStatus.NOT_FOUND.value());
+        error.setMessage(exc.getMessage());
+        error.setTimeStamp(System.currentTimeMillis());
+        //return Response entity
+                                //body\/      //Status code \/
+        return new ResponseEntity<>(error,HttpStatus.NOT_FOUND);
+    }
 }
+
+
+
+
+
+
