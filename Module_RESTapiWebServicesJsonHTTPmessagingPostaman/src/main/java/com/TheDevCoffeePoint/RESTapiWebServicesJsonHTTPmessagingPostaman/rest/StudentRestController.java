@@ -3,6 +3,7 @@ package com.TheDevCoffeePoint.RESTapiWebServicesJsonHTTPmessagingPostaman.rest;
 import com.TheDevCoffeePoint.RESTapiWebServicesJsonHTTPmessagingPostaman.entity.Student;
 import jakarta.annotation.PostConstruct;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -31,4 +32,14 @@ public class StudentRestController {
 
         return theStudents;
     }
+    //define endpoint for "/students/{studentId}" - return student at index
+    @GetMapping("/students/{studentId}")//this is a path variable
+
+    public Student getStudent(@PathVariable int studentId){
+        //access for Students REST service API http://localhost:7070/api/students/{studentId}
+        //just index into the list ... keep it simple now
+        //test for Students REST service API http://localhost:7070/api/students/1
+        return theStudents.get(studentId);
+    }
+
 }
