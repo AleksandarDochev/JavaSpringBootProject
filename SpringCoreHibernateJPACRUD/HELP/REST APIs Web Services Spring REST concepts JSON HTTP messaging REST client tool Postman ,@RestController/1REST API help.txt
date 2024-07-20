@@ -1,7 +1,0 @@
-
-
-
-https://jsonplaceholder.typicode.com/
-->https://jsonplaceholder.typicode.com/users
-copy paste in GET section of Postman to get data about the JSON data reference Postman1
-
