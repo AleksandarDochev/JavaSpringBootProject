@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.2024SpringApp.springboot.demo</groupId>
-	<artifactId>SpringCore</artifactId>
+	<artifactId>SpringCoreJPAHibernateModule</artifactId>
 	<version>0.0.3</version>
 	<name>SpringCoreDemo</name>
 	<description>Demo project for Spring Core</description>
