@@ -10,5 +10,6 @@
     <modules>
         <module>Module_RESTapiWebServicesJsonHTTPmessagingPostaman</module>
         <module>Module_SpringCoreJPAHibernate</module>
+        <module>Module_CrudEmployeeAPIProject</module>
     </modules>
 </project>
