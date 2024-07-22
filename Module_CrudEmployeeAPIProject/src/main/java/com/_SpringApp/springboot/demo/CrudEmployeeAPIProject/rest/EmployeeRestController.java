@@ -48,4 +48,10 @@ public class EmployeeRestController {
     //   "lastName": "doe",
     //   "email": "hector@luv2code"
     //}
+    @PutMapping("/employees")
+    public Employee updateEmployee(@RequestBody Employee theEmployee){
+        Employee dbEmployee = employeeServices.save(theEmployee);
+        return dbEmployee;
+    }
+    //testing done PUT http://localhost:6060/api/employee
 }
