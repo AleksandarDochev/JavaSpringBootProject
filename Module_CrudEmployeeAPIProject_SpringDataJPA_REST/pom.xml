@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.2024SpringApp.springboot.demo</groupId>
-	<artifactId>CrudEmployeeAPIProject_SpringDataJPA_SpringDataRESTapi</artifactId>
+	<artifactId>CrudEmployeeAPIProject_SpringDataJPA</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>CrudEmployeeAPIProject_SpringDataJPA_SpringDataRESTapi</name>
+	<name>CrudEmployeeAPIProject_SpringDataJPA</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -30,11 +30,6 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
-		<!--Add dependency for Spring Data REST-->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-rest</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>

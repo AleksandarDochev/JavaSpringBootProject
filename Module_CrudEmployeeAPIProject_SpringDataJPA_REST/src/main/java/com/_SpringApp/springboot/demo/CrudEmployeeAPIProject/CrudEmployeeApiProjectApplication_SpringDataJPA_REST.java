@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CrudEmployeeApiProjectApplication_SpringDataJPAandREST {
+public class CrudEmployeeApiProjectApplication_SpringDataJPA_REST {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CrudEmployeeApiProjectApplication_SpringDataJPAandREST.class, args);
+		SpringApplication.run(CrudEmployeeApiProjectApplication_SpringDataJPA_REST.class, args);
 		//test http://localhost:6065/api/employees
 		//test by ID http://localhost:6065/api/employees/2
 
