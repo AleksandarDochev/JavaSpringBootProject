@@ -1,0 +1,17 @@
+go to bottom tab of intellij where git is run is and etc.
+select endpoints -> in your project
+select post in the HTTP client select open in editor
+paste and run the following test
+
+###
+POST http://localhost:6060/api/employees
+// The request body is provided on place
+Content-Type: application/json
+{
+   "firstName": "John Doe",
+   "lastName": "Software Engineer",
+   "email": "hector@luv2code"
+}
+
+only avaliable on Ultiimate edition
+only avaliable on Ultiimate edition
