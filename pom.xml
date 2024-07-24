@@ -12,5 +12,6 @@
         <module>Module_SpringCoreJPAHibernate</module>
         <module>Module_CrudEmployeeAPIProject</module>
         <module>Module_CrudEmployeeAPIProject_SpringDataJPA</module>
+        <module>Module_CrudEmployeeAPIProject_SpringDataJPA_SpringDataRESTapi</module>
     </modules>
 </project>
