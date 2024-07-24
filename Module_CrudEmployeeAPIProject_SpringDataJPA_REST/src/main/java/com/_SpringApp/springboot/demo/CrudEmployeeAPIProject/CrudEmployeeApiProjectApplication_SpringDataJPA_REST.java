@@ -8,12 +8,12 @@ public class CrudEmployeeApiProjectApplication_SpringDataJPA_REST {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CrudEmployeeApiProjectApplication_SpringDataJPA_REST.class, args);
-		//test http://localhost:6065/api/employees
-		//test by ID http://localhost:6065/api/employees/2
+		//test http://localhost:6065/magic-api/employees
+		//test by ID http://localhost:6065/magic-api/employees/2
 
 		//test POST  in JSON format -> JSON_howToTestEndpointsGuide
 		//Endpoint test to POST in JSON format
-		//POST http://localhost:6065/api/employees
+		//POST http://localhost:6065/magic-api/employees
 		//the requested body is provided in place
 		//Content-Type: application/json
 		//
