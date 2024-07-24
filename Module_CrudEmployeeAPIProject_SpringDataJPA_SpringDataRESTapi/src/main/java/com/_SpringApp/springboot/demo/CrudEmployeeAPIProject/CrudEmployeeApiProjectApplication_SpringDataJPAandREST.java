@@ -4,16 +4,16 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CrudEmployeeApiProjectApplication_SpringDATAandREST {
+public class CrudEmployeeApiProjectApplication_SpringDataJPAandREST {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CrudEmployeeApiProjectApplication_SpringDATAandREST.class, args);
-		//test http://localhost:6060/api/employees
-		//test by ID http://localhost:6060/api/employees/2
+		SpringApplication.run(CrudEmployeeApiProjectApplication_SpringDataJPAandREST.class, args);
+		//test http://localhost:6065/api/employees
+		//test by ID http://localhost:6065/api/employees/2
 
 		//test POST  in JSON format -> JSON_howToTestEndpointsGuide
 		//Endpoint test to POST in JSON format
-		//POST http://localhost:6060/api/employees
+		//POST http://localhost:6065/api/employees
 		//the requested body is provided in place
 		//Content-Type: application/json
 		//

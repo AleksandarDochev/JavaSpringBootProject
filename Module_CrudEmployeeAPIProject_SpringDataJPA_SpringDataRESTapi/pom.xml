@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.2024SpringApp.springboot.demo</groupId>
-	<artifactId>Module_CrudEmployeeAPIProject_SpringDataJPA_SpringDataRESTapi</artifactId>
+	<artifactId>CrudEmployeeAPIProject_SpringDataJPA_SpringDataRESTapi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Module_CrudEmployeeAPIProject_SpringDataJPA_SpringDataRESTapi</name>
+	<name>CrudEmployeeAPIProject_SpringDataJPA_SpringDataRESTapi</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>

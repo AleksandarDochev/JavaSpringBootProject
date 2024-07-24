@@ -42,7 +42,7 @@ public class EmployeeRestController {
         Employee dbEmployee = employeeServices.save(theEmployee);
         return dbEmployee;
     }
-    //testing done POST http://localhost:6060/api/employees
+    //testing done POST http://http://localhost:6065/api/employees
     //{
     //   "firstName": "John",
     //   "lastName": "doe",
@@ -53,7 +53,7 @@ public class EmployeeRestController {
         Employee dbEmployee = employeeServices.save(theEmployee);
         return dbEmployee;
     }
-    //testing done PUT http://localhost:6060/api/employee
+    //testing done PUT http://http://localhost:6065/api/employee
     @DeleteMapping("/employees/{employeeId}")
     public String deleteEmployee(@PathVariable int employeeId){
         Employee theEmployee = employeeServices.findById(employeeId);
