@@ -10,8 +10,8 @@ public class CrudEmployeeSpringSecurity {
 		SpringApplication.run(CrudEmployeeSpringSecurity.class, args);
 
 		//Example endpoints
-		//test http://localhost:6050/magic-api/members
-		//test by ID http://localhost:6050/magic-api/members/2
+		//test http://localhost:6050/magic-api/employees
+		//test by ID http://localhost:6050/magic-api/employees/2
 	}
 
 }
