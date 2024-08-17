@@ -8,6 +8,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>PriceChartApp</module>
         <module>Module_RESTapiWebServicesJsonHTTPmessagingPostaman</module>
         <module>Module_SpringCoreJPAHibernate</module>
         <module>Module_CrudEmployeeAPIProject</module>
