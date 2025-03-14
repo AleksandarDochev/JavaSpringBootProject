@@ -8,7 +8,7 @@
 		<version>3.3.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.2024SpringApp.springboot.demo</groupId>
+	<groupId>com.GeneralSpringApp.springboot.demo</groupId>
 	<artifactId>PriceChartApp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>PriceChartApp</name>

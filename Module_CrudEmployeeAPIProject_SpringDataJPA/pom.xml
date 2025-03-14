@@ -8,7 +8,7 @@
 		<version>3.3.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.2024SpringApp.springboot.demo</groupId>
+	<groupId>com.GeneralSpringApp.springboot.demo</groupId>
 	<artifactId>CrudEmployeeAPIProject_SpringDataJPA</artifactId>
 	<version>1.0.0-STABLE</version>
 	<name>CrudEmployeeAPIProject_SpringDataJPA</name>

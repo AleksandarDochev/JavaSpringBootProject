@@ -8,7 +8,7 @@
 		<version>3.2.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.2024SpringApp.springboot.demo</groupId>
+	<groupId>com.GeneralSpringApp.springboot.demo</groupId>
 	<artifactId>SpringCoreJPAHibernateModule</artifactId>
 	<version>0.0.3</version>
 	<name>SpringCoreDemo</name>
