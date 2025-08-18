@@ -1,0 +1,38 @@
+1.Get maven , docs are for maven 3.9.11
+https://maven.apache.org/download.cgi
+the bin version
+
+2.Create the following path
+C:\Program Files\Apache\Maven
+
+3.Move downloaded bin zip to folder
+,extract the zip
+
+4.Go into bin folder and copy disk address
+C:\Program Files\Apache\Maven\apache-maven-3.9.11\bin
+should look like that
+
+5.copy the bin address and search in windows bar
+'Edit system environment variables'
+
+6.in the system properties window click environment variables
+reference img6
+
+7.Edit the path variable from system variable window section
+reference img7
+
+8.Add a new variable and make sure to move it to the top so it gets loaded by
+Windows.
+reference img8
+
+9.Test , open CMD terminal in windows
+mvn --version
+U should get img9 as result
+
+10.Maven  Intellij implementation
+Intellij  > File > Settings > Build, Execution, Deployment > Build Tools > Maven.
+edit the maven home path to your original parent Maven folder in our case
+C:\Program Files\Apache\Maven\apache-maven-3.9.11
+reference img10
+
+11.Restart Intellij and start using mvn command directly in the terminal
