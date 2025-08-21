@@ -98,6 +98,10 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>3.2.3</version>
+				<configuration>
+					<mainClass>Module_SpringCoreJPAHibernate/src/main/java/com/SpringApp/springboot/demo/SpringBootProject/SpringBootApplication</mainClass>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
