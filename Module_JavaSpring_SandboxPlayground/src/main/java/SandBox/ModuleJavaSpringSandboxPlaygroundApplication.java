@@ -8,6 +8,8 @@ public class ModuleJavaSpringSandboxPlaygroundApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ModuleJavaSpringSandboxPlaygroundApplication.class, args);
+		product ob = new product();
+		ob.makeSound();
 	}
 
 }
