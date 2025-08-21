@@ -60,6 +60,19 @@
 	<build>
 		<plugins>
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>preCompile</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>compile</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
@@ -75,10 +88,7 @@
 							<goal>java</goal>
 						</goals>
 						<configuration>
-							<mainClass>Module_JavaSpring_SandboxPlayground/src/main/java/SandBox/ModuleJavaSpringSandboxPlaygroundApplication</mainClass>
-							<arguments>
-								<argument></argument>
-							</arguments>
+							<mainClass>SandBox.ModuleJavaSpringSandboxPlaygroundApplication</mainClass>
 						</configuration>
 					</execution>
 				</executions>
