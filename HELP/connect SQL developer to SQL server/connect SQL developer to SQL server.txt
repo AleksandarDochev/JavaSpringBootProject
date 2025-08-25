@@ -1,0 +1,17 @@
+
+1.https://www.mysql.com/products/connector/
+2.Download /JDBC Driver for MySQL (Connector/J)
+3.For Windows the platform is "platform independent"
+4.u don't need log in.
+5.after u get the file extract it.
+
+6.Go into SQL developer
+Tools > Preferences > Database > Third party JDBC drivers Ref:img1
+> add your extracted subfolder Ref:img2
+in my case D:\JavaStuff\mysql-connector-j-9.4.0
+
+7.Once u add it a new SQL type connecting tab will become available  in the new connection window
+Ref:img3
+
+8.Check your username in mysql DB  and your port should be left alone if the default
+SQL port which is 3306
