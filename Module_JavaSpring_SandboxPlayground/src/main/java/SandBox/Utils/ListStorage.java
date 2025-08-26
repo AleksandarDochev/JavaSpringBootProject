@@ -1,8 +1,10 @@
 package SandBox.Utils;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Arrays;
 import java.util.List;
-
+@Component
 public class ListStorage {
     public List<String> List1;
     public List<String> List2;
