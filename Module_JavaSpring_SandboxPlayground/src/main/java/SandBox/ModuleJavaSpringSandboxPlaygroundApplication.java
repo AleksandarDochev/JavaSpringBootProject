@@ -3,6 +3,7 @@ package SandBox;
 import SandBox.Utils.ArrayStorage;
 import SandBox.Utils.Caller;
 import SandBox.Utils.PrinterCustom;
+import SandBox.Utils.SimpleListClassEmptyReferenceVsActualObject;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -36,6 +37,12 @@ public class ModuleJavaSpringSandboxPlaygroundApplication {
 		product ob = new product();
 		ob.makeSound();
 		System.out.println("callCountArrayStorage:"+arrayBeanTest.callCountArrayStorage);
+
+
+		System.out.println("--------- SimpleListClassEmptyReferenceVsActualObject test section ------------");
+		SimpleListClassEmptyReferenceVsActualObject objSpringSimpleList = context.getBean(SimpleListClassEmptyReferenceVsActualObject.class);
+		System.out.println(objSpringSimpleList.List1emptyReference);
+		System.out.println(objSpringSimpleList.List2actualObject);
 
 	}
 
