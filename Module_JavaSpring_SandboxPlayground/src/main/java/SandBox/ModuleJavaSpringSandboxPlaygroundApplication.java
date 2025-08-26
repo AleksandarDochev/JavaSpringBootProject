@@ -44,7 +44,7 @@ public class ModuleJavaSpringSandboxPlaygroundApplication {
 
 		System.out.println("--------- SimpleListClassEmptyReferenceVsActualObjectV2 test section ------------");
 		SimpleListClassEmptyReferenceVsActualObjectV2 objSpringSimpleListV2 = context.getBean(SimpleListClassEmptyReferenceVsActualObjectV2.class);
-
+		System.out.println("Check class SimpleListClassEmptyReferenceVsActualObjectV2 for explanation can't print");
 
 	}
 
