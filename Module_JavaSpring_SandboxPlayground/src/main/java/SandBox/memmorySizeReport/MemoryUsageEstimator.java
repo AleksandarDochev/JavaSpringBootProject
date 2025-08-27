@@ -1,9 +1,13 @@
 package SandBox.memmorySizeReport;
 
+import SandBox.ModuleJavaSpringSandboxPlaygroundApplication;
+import org.springframework.boot.SpringApplication;
+import org.springframework.context.ApplicationContext;
+
 public class MemoryUsageEstimator {
 
     public static void main(String[] args) {
-
+        ApplicationContext context = SpringApplication.run(ModuleJavaSpringSandboxPlaygroundApplication.class, args);
         // Create an instance of the class to call the method
         MemoryReport estimator = new MemoryReport();
         // Step 1: Print memory usage before creating the object
