@@ -3,16 +3,17 @@ package SandBox.memmorySizeReport;
 public class MemoryUsageEstimator {
 
     public static void main(String[] args) {
+
         // Create an instance of the class to call the method
         MemoryReport estimator = new MemoryReport();
         // Step 1: Print memory usage before creating the object
         estimator.MemoryReportMethodStart();
         // Step 2: Create the object you're interested in
-        PrinterCustom myPrinterJava = new PrinterCustom();
+        SomeClassWithData someClassWithData = new SomeClassWithData();
         // Step 3: Print memory usage after creating the object
         estimator.MemoryReportMethodAfter();
         // The object is now out of scope and can be garbage collected
-        myPrinterJava = null;
+        someClassWithData = null;
         // Hint to the garbage collector to run
         System.gc();
         // Step 4: Print memory usage after garbage collection
@@ -20,5 +21,3 @@ public class MemoryUsageEstimator {
     }
 
 }
-// Dummy class to make the example compilable
-class PrinterCustom {}
