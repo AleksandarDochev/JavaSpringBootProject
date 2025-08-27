@@ -20,6 +20,5 @@ public class MemoryUsageEstimator {
     }
 
 }
-
 // Dummy class to make the example compilable
 class PrinterCustom {}
