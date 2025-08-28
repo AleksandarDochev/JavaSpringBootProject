@@ -7,7 +7,11 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "SandBox.Utils")
+@ComponentScan
+		(basePackages = {
+		"SandBox.Utils",
+		"SandBox.controller"}
+		)
 public class ModuleJavaSpringSandboxPlaygroundApplication {
 	private int callCount = 0;
 	public static void main(String[] args) {
