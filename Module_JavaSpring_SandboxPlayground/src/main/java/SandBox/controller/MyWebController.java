@@ -5,6 +5,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class MyWebController {
 
+    @GetMapping("/dashboard")
+    public String showDashboard() {
+        // This will tell Spring to look for a template named 'index'
+        // which corresponds to src/main/resources/static/index.html
+        return "index.html";
+    }
     @GetMapping("/start-coding")
     public String startCoding() {
         // Here you can add logic that you want to execute when the button is clicked.
