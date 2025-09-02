@@ -3,8 +3,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class MyWebController {
+public class WebController {
 
+    //here we create an endpoint and assign what it should return to the user
+    //after http://localhost:6055/dashboard is how it's
     @GetMapping("/dashboard")
     public String showDashboard() {
         // This will tell Spring to look for a template named 'index'
