@@ -1,6 +1,6 @@
 package SandBox.controller;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class WebController {
@@ -13,7 +13,7 @@ public class WebController {
         // which corresponds to src/main/resources/static/index.html
         return "index.html";
     }
-    @GetMapping("/start-coding")
+
     public String startCoding() {
         // Here you can add logic that you want to execute when the button is clicked.
         // For example, starting a new process, logging an event, or redirecting to another page.
@@ -22,5 +22,10 @@ public class WebController {
         // Return the name of the view (e.g., HTML page) to display after the click.
         // In this case, we'll redirect back to the home page or a success page.
         return "redirect:/";
+    }
+    @GetMapping("/start-coding")
+    @PostMapping("/start-coding")
+    public void startCodingMethod(){
+        System.out.println("The 'Start coding well' button was clicked! and method was successfully mapped");
     }
 }

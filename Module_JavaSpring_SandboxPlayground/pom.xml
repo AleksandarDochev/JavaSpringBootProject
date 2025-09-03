@@ -83,6 +83,9 @@
 				<executions>
 					<execution>
 						<id>run-java-with-Maven</id>
+<!--						can use-->
+<!--						mvn clean install -pl Module_JavaSpring_SandboxPlayground-->
+<!--						mvn clean install -DskipTests-->
 <!--                        IMPORTANT LESSON if you run your app in the validation phase-->
 <!--						spring will NOT pick up the configuration u have done for it -->
 <!--						in the src/main/resources/application.properties so TAKE that in mind-->

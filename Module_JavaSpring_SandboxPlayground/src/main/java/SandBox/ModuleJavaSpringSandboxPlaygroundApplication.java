@@ -1,5 +1,6 @@
 package SandBox;
 
+import SandBox.StringAndObjectStringClassSignatures.SignatureTypesAndStringTypes;
 import SandBox.Utils.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -49,6 +50,11 @@ public class ModuleJavaSpringSandboxPlaygroundApplication {
 		System.out.println("--------- SimpleListClassEmptyReferenceVsActualObjectV2 test section ------------");
 		SimpleListClassEmptyReferenceVsActualObjectV2 objSpringSimpleListV2 = context.getBean(SimpleListClassEmptyReferenceVsActualObjectV2.class);
 		System.out.println("Check class SimpleListClassEmptyReferenceVsActualObjectV2 for explanation can't print");
+
+		System.out.println("\n----StringAndObjectStringClassSignatures----");
+		SignatureTypesAndStringTypes objSignatureTypesAndStringTypes = new SignatureTypesAndStringTypes();
+		objSignatureTypesAndStringTypes.someGenericClassMethodString();
+		objSignatureTypesAndStringTypes.someStringClassMethod();
 
 	}
 
