@@ -83,7 +83,13 @@
 				<executions>
 					<execution>
 						<id>run-java-with-Maven</id>
-						<phase>validate</phase>
+<!--                        IMPORTANT LESSON if you run your app in the validation phase-->
+<!--						spring will NOT pick up the configuration u have done for it -->
+<!--						in the src/main/resources/application.properties so TAKE that in mind-->
+<!--						So if I decide to switch back to validation phase I need to keep in mind i will not read -->
+<!--						any of my spring application.properties , that's why I had the error -->
+<!--						the app not using 6065 as configure and trying to for the default 8080-->
+						<phase>install</phase>
 						<goals>
 							<goal>java</goal>
 						</goals>
@@ -93,25 +99,6 @@
 					</execution>
 				</executions>
 			</plugin>
-<!--			<plugin>-->
-<!--				<groupId>org.codehaus.mojo</groupId>-->
-<!--				<artifactId>exec-maven-plugin</artifactId>-->
-<!--				<executions>-->
-<!--					<execution>-->
-<!--						<id>run-hello-script</id>-->
-<!--						<phase>validate</phase>-->
-<!--						<goals>-->
-<!--							<goal>exec</goal>-->
-<!--						</goals>-->
-<!--						<configuration>-->
-<!--							<executable>bash</executable>-->
-<!--							<arguments>-->
-<!--								<argument>${project.basedir}/Module_JavaSpring_SandboxPlayground/src/main/resources/scripts/Hello.sh</argument>-->
-<!--							</arguments>-->
-<!--						</configuration>-->
-<!--					</execution>-->
-<!--				</executions>-->
-<!--			</plugin>-->
 		</plugins>
 	</build>
 
