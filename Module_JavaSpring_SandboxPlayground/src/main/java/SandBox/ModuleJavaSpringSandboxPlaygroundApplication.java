@@ -2,6 +2,9 @@ package SandBox;
 
 import SandBox.StringAndObjectStringClassSignatures.SignatureTypesAndStringTypes;
 import SandBox.Utils.*;
+import SandBox.VoidAndNonVoidMethods.Breakfast;
+import SandBox.VoidAndNonVoidMethods.VoidAndNonVoidMethods;
+import SandBox.security.SandboxSecurityConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -55,6 +58,23 @@ public class ModuleJavaSpringSandboxPlaygroundApplication {
 		SignatureTypesAndStringTypes objSignatureTypesAndStringTypes = new SignatureTypesAndStringTypes();
 		objSignatureTypesAndStringTypes.someGenericClassMethodString();
 		objSignatureTypesAndStringTypes.someStringClassMethod();
+
+		System.out.println("\n----VoidAndNonVoidMethods----");
+		Breakfast objBreakfast = new Breakfast("eggs and toast, "," with a side of bacon, "," and coffee.");
+		VoidAndNonVoidMethods objVoidAndNonVoidMethods = new VoidAndNonVoidMethods();
+		System.out.println("objBreakfast"+objBreakfast.toString());
+		objVoidAndNonVoidMethods.makeBreakfastVoid();
+		System.out.println(objVoidAndNonVoidMethods.makeBreakfastNonVoid().toString());
+
+
+
+		System.out.println("\n----SandboxSecurityConfig.java----");
+//		SandboxSecurityConfig objJavaSandboxSecurityConfig = new SandboxSecurityConfig();
+//		SandboxSecurityConfig objSpringSandboxSecurityConfig = context.getBean(SandboxSecurityConfig.class);
+//		System.out.println(objJavaSandboxSecurityConfig.userDetailsManager());
+//		System.out.println(objSpringSandboxSecurityConfig.userDetailsManager());
+
+
 
 	}
 
