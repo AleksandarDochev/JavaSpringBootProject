@@ -14,7 +14,7 @@ public class SecurityConfig {
         http
                 .authorizeHttpRequests(authorize -> authorize
                         // These endpoints will be public
-                        .requestMatchers("/signup-form","/login").permitAll()
+                        .requestMatchers("/signup-form", "/login", "/dashboard", "/start-coding", "/home", "/").permitAll()
                         // All other requests must be authenticated
                         .anyRequest().authenticated()
                 )
