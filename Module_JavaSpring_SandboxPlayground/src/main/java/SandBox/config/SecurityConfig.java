@@ -2,9 +2,11 @@ package SandBox.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
+@EnableWebSecurity
 public class SecurityConfig {
 
     @Bean
@@ -12,7 +14,7 @@ public class SecurityConfig {
         http
                 .authorizeHttpRequests(authorize -> authorize
                         // These endpoints will be public
-                        .requestMatchers("/api/public/**", "/login", "/home").permitAll()
+                        .requestMatchers("/signup-form","/login").permitAll()
                         // All other requests must be authenticated
                         .anyRequest().authenticated()
                 )
