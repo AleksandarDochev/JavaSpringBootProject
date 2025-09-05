@@ -13,6 +13,7 @@
         <module>Module_SpringCoreJPAHibernate</module>
         <module>Module_CrudEmployeeAPIProject</module>
         <module>Module_CrudEmployeeAPIProject_SpringDataJPA</module>
+        <module>Module_CrudEmployeeAPIProject_SpringDataJPA_PATCH</module>
         <module>Module_CrudEmployeeAPIProject_SpringDataJPA_REST</module>
         <module>Module_CrudEmployeeSpringSecurity</module>
         <module>Module_JavaSpring_SandboxPlayground</module>
