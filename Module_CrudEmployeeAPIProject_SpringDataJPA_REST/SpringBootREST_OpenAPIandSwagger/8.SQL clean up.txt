@@ -1,0 +1,4 @@
+1.in mysql work bench execute the whole
+Module_CrudEmployeeAPIProject_SpringDataJPA_REST/Setup guide spring-boot-employee-sql-script/employee-directory.sql
+2.SELECT * FROM employee_directory.employee;
+you should see the default

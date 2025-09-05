@@ -16,5 +16,6 @@
         <module>Module_CrudEmployeeAPIProject_SpringDataJPA_REST</module>
         <module>Module_CrudEmployeeSpringSecurity</module>
         <module>Module_JavaSpring_SandboxPlayground</module>
+        <module>Module_SpringBootREST_OpenAPIandSwagger</module>
     </modules>
 </project>
