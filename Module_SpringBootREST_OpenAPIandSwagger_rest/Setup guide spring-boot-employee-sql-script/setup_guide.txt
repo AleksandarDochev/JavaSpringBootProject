@@ -1,0 +1,3 @@
+Open workbench -> Login into spring student -> password springstudent
+File-> opem mySQL script -> choose script employee-directory.sql ->execute
+refresh workbench schemas-> check for employ under tables
