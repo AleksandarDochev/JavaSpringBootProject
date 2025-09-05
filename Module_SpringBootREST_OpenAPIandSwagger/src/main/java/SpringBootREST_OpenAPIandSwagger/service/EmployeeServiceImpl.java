@@ -1,7 +1,7 @@
-package service;
+package SpringBootREST_OpenAPIandSwagger.service;
 
-import dao.EmployeeRepository;
-import entity.Employee;
+import SpringBootREST_OpenAPIandSwagger.dao.EmployeeRepository;
+import SpringBootREST_OpenAPIandSwagger.entity.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

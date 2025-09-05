@@ -1,5 +1,6 @@
-package service;
-import entity.Employee;
+package SpringBootREST_OpenAPIandSwagger.service;
+import SpringBootREST_OpenAPIandSwagger.entity.Employee;
+
 import java.util.List;
 
 public interface EmployeeService {

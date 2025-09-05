@@ -1,11 +1,11 @@
-package rest;
+package SpringBootREST_OpenAPIandSwagger.rest;
 
+import SpringBootREST_OpenAPIandSwagger.entity.Employee;
+import SpringBootREST_OpenAPIandSwagger.service.EmployeeService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import entity.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import service.EmployeeService;
 
 import java.util.List;
 import java.util.Map;

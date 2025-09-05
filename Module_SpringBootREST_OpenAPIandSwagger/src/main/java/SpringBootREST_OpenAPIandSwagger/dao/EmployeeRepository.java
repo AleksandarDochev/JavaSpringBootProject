@@ -1,6 +1,6 @@
-package dao;
+package SpringBootREST_OpenAPIandSwagger.dao;
 
-import entity.Employee;
+import SpringBootREST_OpenAPIandSwagger.entity.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface EmployeeRepository extends JpaRepository<Employee, Integer> {

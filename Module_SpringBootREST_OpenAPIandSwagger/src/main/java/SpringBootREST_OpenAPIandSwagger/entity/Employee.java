@@ -1,4 +1,4 @@
-package entity;
+package SpringBootREST_OpenAPIandSwagger.entity;
 
 import jakarta.persistence.*;
 
