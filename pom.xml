@@ -11,6 +11,7 @@
         <module>Microservice_gateway</module>
         <module>Microservice_discovery</module>
         <module>Microservice_config-server</module>
+        <module>Microservice_student</module>
         <module>PriceChartApp</module>
         <module>Module_RESTapiWebServicesJsonHTTPmessagingPostaman</module>
         <module>Module_SpringCoreJPAHibernate</module>
