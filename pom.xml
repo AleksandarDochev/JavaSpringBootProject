@@ -9,6 +9,7 @@
     <modules>
         <!--always give <artifactId> to root pom to start initialization -->
         <module>gateway</module>
+        <module>discovery</module>
         <module>PriceChartApp</module>
         <module>Module_RESTapiWebServicesJsonHTTPmessagingPostaman</module>
         <module>Module_SpringCoreJPAHibernate</module>
