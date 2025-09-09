@@ -8,9 +8,9 @@
     <packaging>pom</packaging>
     <modules>
         <!--always give <artifactId> to root pom to start initialization -->
-        <module>gateway</module>
-        <module>discovery</module>
-        <module>config-server</module>
+        <module>Microservice_gateway</module>
+        <module>Microservice_discovery</module>
+        <module>Microservice_config-server</module>
         <module>PriceChartApp</module>
         <module>Module_RESTapiWebServicesJsonHTTPmessagingPostaman</module>
         <module>Module_SpringCoreJPAHibernate</module>
