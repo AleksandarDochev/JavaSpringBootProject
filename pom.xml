@@ -6,8 +6,9 @@
     <artifactId>JavaSpringBootProject</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
-
     <modules>
+        <!--always give <artifactId> to root pom to start initialization -->
+        <module>gateway</module>
         <module>PriceChartApp</module>
         <module>Module_RESTapiWebServicesJsonHTTPmessagingPostaman</module>
         <module>Module_SpringCoreJPAHibernate</module>
