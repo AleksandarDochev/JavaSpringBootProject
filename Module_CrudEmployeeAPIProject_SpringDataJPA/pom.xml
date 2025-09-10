@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.GeneralSpringApp.springboot.demo</groupId>
-	<artifactId>CrudEmployeeAPIProject_SpringDataJPA</artifactId>
+	<artifactId>Module_CrudEmployeeAPIProject_SpringDataJPA</artifactId>
 	<version>1.0.0-STABLE</version>
 	<name>CrudEmployeeAPIProject_SpringDataJPA</name>
 	<description>Demo project for Spring Boot</description>

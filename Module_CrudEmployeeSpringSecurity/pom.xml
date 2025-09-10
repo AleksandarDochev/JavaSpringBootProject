@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.GeneralSpringApp.springboot.demo</groupId>
-	<artifactId>CrudEmployeeSpringSecurity</artifactId>
+	<artifactId>Module_CrudEmployeeSpringSecurity</artifactId>
 	<version>1.0.0-STABLE</version>
 	<name>CrudEmployeeAPIProject_SpringDataJPA</name>
 	<description>Description_CrudEmployeeSpringSecurity</description>

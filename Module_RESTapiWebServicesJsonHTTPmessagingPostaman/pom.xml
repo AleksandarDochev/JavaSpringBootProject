@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.GeneralSpringApp.springboot.demo</groupId>
-	<artifactId>RESTapiWebServicesJsonHTTPmessagingPostaman</artifactId>
+	<artifactId>Module_RESTapiWebServicesJsonHTTPmessagingPostaman</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>RESTapiWebServicesJsonHTTPmessagingPostaman</name>
 	<description>Demo project for Spring Boot</description>
