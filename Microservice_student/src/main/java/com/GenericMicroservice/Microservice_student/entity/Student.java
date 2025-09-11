@@ -2,6 +2,7 @@ package com.GenericMicroservice.Microservice_student.entity;
 
 import jakarta.persistence.Entity;
 import lombok.*;
+import jakarta.persistence.Id;
 
 @Entity
 @Getter
@@ -10,11 +11,10 @@ import lombok.*;
 @NoArgsConstructor
 @Builder
 public class Student {
-
-    private int id;
-    private String firstName;
-    private String lastName;
+    @Id
+    private Integer id;
+    private String firstname;
+    private String lastname;
     private String email;
-    private int schoolId;
-
+    private Integer studentId;
 }
