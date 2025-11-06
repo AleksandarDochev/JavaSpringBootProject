@@ -1,0 +1,41 @@
+Spring-managed instance (AutowiredUse)
+Created and initialized by Spring, with annotations like @Configuration, @Value, and @PostConstruct applied.
+→ Works. field1 and field2 are injected correctly.
+
+Manually created instance (new NonAutowiredUse())
+Created by you, outside the Spring container.
+→ Fails. The @Value annotations don’t get processed, so field1 and field2 remain null.
+
+
+
+Spring-managed instance (AutowiredUse)
+Created and initialized by Spring, with annotations like @Configuration, @Value, and @PostConstruct applied.
+→ Works. field1 and field2 are injected correctly.
+
+Manually created instance (new NonAutowiredUse())
+Created by you, outside the Spring container.
+→ Fails. The @Value annotations don’t get processed, so field1 and field2 remain null.
+That’s why your output shows:
+
+null
+prop3
+
+The correct way to use such a class
+
+Instead of this:
+
+NonAutowiredUse nonAutowiredUse = new NonAutowiredUse();
+
+
+You should let Spring inject it:
+
+@Autowired
+NonAutowiredUse nonAutowiredUse;
+
+
+Then the container will ensure all @Value fields are filled before your class’s @PostConstruct runs.
+
+In short:
+
+✅ Let Spring create and inject beans (@Autowired, @Component, @Configuration)
+❌ Don’t use new to instantiate Spring-managed classes, or you’ll lose all injection and lifecycle behavior.

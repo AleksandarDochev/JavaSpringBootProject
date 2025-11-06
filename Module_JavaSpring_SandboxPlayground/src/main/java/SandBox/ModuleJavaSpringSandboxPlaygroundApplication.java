@@ -14,7 +14,8 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan
 		(basePackages = {
 		"SandBox.Utils",
-		"SandBox.controller"}
+		"SandBox.controller",
+		"SandBox.SpringUsingAutowiredVsNewInstance"}
 		)
 public class ModuleJavaSpringSandboxPlaygroundApplication {
 	private int callCount = 0;
@@ -67,13 +68,11 @@ public class ModuleJavaSpringSandboxPlaygroundApplication {
 		System.out.println(objVoidAndNonVoidMethods.makeBreakfastNonVoid().toString());
 
 
-
 		System.out.println("\n----SandboxSecurityConfig.java----");
 //		SandboxSecurityConfig objJavaSandboxSecurityConfig = new SandboxSecurityConfig();
 //		SandboxSecurityConfig objSpringSandboxSecurityConfig = context.getBean(SandboxSecurityConfig.class);
 //		System.out.println(objJavaSandboxSecurityConfig.userDetailsManager());
 //		System.out.println(objSpringSandboxSecurityConfig.userDetailsManager());
-
 
 
 	}
